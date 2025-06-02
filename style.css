@@ -1,0 +1,937 @@
+body{
+    margin: 0;
+    display: inline-flex;
+}
+
+.navbar{
+    justify-content: right;
+    height: 100vh;
+    width: 14vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    background-color: black;
+    display: inline-block;
+}
+.navbartitle{
+    height: 4vh;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding-top: 8vh;
+}
+.inko{
+    font-size: 75%;
+    display: inline;
+    color: #FF698D;
+}
+.moko{
+    font-size: 75%;
+    display: inline;
+    color: white;
+}
+.navbaritems{
+    border-radius: 8%;
+    height: 56vh;
+    width: 100%;
+    margin-top: 8vh;
+}
+
+.overview{
+    border-radius: 8%;
+    height: 10%;
+    width: 100%;
+    color: white;
+    padding-top: 2%;
+    font-size: 60%;
+    margin-bottom: 5%;
+    display: inline-flex;
+}
+.overviewtitle{
+    position: relative;
+    bottom: 25%;
+}
+.overviewimg{
+    height: 90%;
+    padding-right: 10%;
+    padding-left: 2%;
+    width: fit-content;
+}
+.overview:hover{
+    background-color: #FF698D;
+}
+
+.navbarlogout{
+    margin-top: 40%;
+    height: 8vh;
+    width: 100%;
+    font-size: 60%;
+    display: inline-flex;
+    color: white;
+    border-radius: 8%;
+    border: 2px solid grey;
+}
+
+.navbarlogoutimg{
+    height: 80%;
+    margin-top: 3%;
+    padding-left: 3%;
+    padding-right: 6%;
+    width: fit-content;
+    display: inline-flex;
+}
+.navbarlogout:hover{
+    background-color: #FF698D;
+    border: none;
+}
+.account{
+    height: 100vh;
+    width: 82vw;
+    background-color: #E8E8E8;
+}
+.titlebar{
+    height: 10vh;
+    width: 80vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    background-color: #E8E8E8;
+    display: inline-flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+.titlebarheading{
+    height: 100%;
+    width: 25vw;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.titlebarimg{
+    height: 20%;
+}
+.date{
+    font-size: 20%;
+    display: inline;
+}
+
+.searchbar{
+    height: 100%;
+    width: 25vw;
+    display: inline-flex;
+    align-items: center;
+    justify-content: right;
+}
+.notificationimg{
+    padding-right: 5%;
+    height: 30%;
+    width: fit-content;
+}
+.searchbox{
+    height: 4vh;
+    width: 65%;
+    background-color: black;
+}
+.inputbox{
+    height: 100%;
+    width: 100%;
+    font-size: xx-small;
+}
+.inputbox:focus{
+    outline: none;
+}
+.searchicon{
+    height: 30%;
+    width: fit-content;
+    position: relative;
+    right: 5%;
+}
+
+.accdetails{
+    height: 33vh;
+    width: 96%;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.accountbalancecontainer{
+    height: 100%;
+    width: 33%;
+    font-size: 80%;
+    color: #878787;
+}
+.acctype{
+    border-radius:4% ;
+    height: 80%;
+    width: 90%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: white ;
+    margin-top: 2%;
+}
+.accbalance{
+    height: 20%;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    font-weight: 200;
+    font-size: 80%;
+    color: black;
+}
+.allaccounts{
+    font-size: 10%;
+    color: grey;
+    position: relative;
+    top: 30%;
+}
+.debitcard{
+    display: inline-flex;
+    height: 38%;
+    width: 90%;
+    border-radius: 4%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 5%;
+    background-color: #FB3F6C;
+}
+
+.debitcardmenu{
+    height: 100%;
+    width: 50%;
+    font-size: 50%;
+    color: white;
+    line-height: 0;
+}
+
+.cardbalance{
+    height: 100%;
+    width: 50%;
+    justify-content: right;
+}
+
+.amount{
+    color: white;
+    height: 40%;
+    width: 100%;
+    padding-top: 3%;
+    font-size: 70%;
+    display: inline-flex;
+    justify-content: right;
+}
+.banklogo{
+    height: 40%;
+    width: 100%;
+    padding-top: 2%;
+    display: inline-flex;
+    justify-content: right;
+}
+.bankimg{
+    height:100%;
+    width: fit-content;
+}
+.selectcard{
+    padding-top: 2%;
+    height: 15%;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.previous{
+    height: 100%;
+    width: 30%;
+    display: inline-flex;
+    align-items: center;
+    font-size: 20%;
+    color: #D1D1D1;
+}
+.next{
+    height: 100%;
+    width: 30%;
+    display: inline-flex;
+    font-size: 20%;
+    justify-content: right;
+    align-items: center;
+    color: black;
+}
+.buttons{
+    height: 100%;
+    width: 30%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.previousimg{
+    padding-right: 5%;
+    display: inline;
+    height: 30%;
+    width: fit-content;
+}
+.nextimg{
+    height: 30%;
+    padding-left: 5%;
+    width: fit-content;
+}
+.buttonimg{
+    height: 30%;
+    width: 50%;
+}
+
+.fontgoals{
+    height: 100%;
+    width: 33%;
+    font-size: 80%;
+    color: #878787;
+}
+
+.upcomingbills{
+    height: 100%;
+    width: 33%;
+    font-size: 80%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.goalsblock1{
+    height: 20%;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.goalsamt{
+    height: 80%;
+    width: 35%;
+    display: inline-flex;
+    justify-content: space-between;
+    color:black;
+    font-size: 80%;
+}
+.goalsdate{
+    height: 90%;
+    padding-top: 2%;
+    width: 20%;
+    font-size: 20%;
+}
+.goalsblock2{
+    margin-top: 7%;
+    height: 60%;
+    width: 100%;
+    display: inline-flex;
+}
+.goalsblock2_1{
+    height:100%;
+    width: 50%;
+}
+.goalsblock2_1_1{
+    display: inline-flex;
+    height: 40%;
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.goalsblock2_1_1_1{
+    display: inline-flex;
+    height: 100%;
+    width: 15%;
+}
+.goalsblock2_1_1_1img{
+    height: 50%;
+    width: 100%;
+    padding-top: 20%;
+}
+
+.goalsblock2_1_1_2{
+    height: 100%;
+    width: 85%;
+}
+.goalsblock2_1_1_2amt{
+    color: black;
+    size: 100%;
+}
+.goalsblock2_1_1_2_1{
+    height: 30%;
+    width: 100%;
+    font-size: 20%;
+}
+.goalsblock2_1_1_2_2{
+    height: 50%;
+    width: 100%;
+    font-size: 60%;
+    color: black;
+}
+
+.goalsblock2_1_2{
+    display: inline-flex;
+    height: 40%;
+    width: 100%;
+}
+
+.goalsblock2_1_2_1{
+    display: inline-flex;
+    height: 100%;
+    width: 15%;
+}
+.goalsblock2_1_2_1img{
+    height: 50%;
+    width: 100%;
+    padding-top: 20%;
+}
+
+.goalsblock2_1_2_2{
+    height: 100%;
+    width: 85%;
+}
+.goalsblock2_1_2_2amt{
+    color: black;
+    size: 100%;
+}
+.goalsblock2_1_2_2_1{
+    height: 30%;
+    width: 100%;
+    font-size: 20%;
+}
+.goalsblock2_1_2_2_2{
+    height: 50%;
+    width: 100%;
+    font-size: 60%;
+    color: black;
+}
+.goalsblock3{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.goalsblock4{
+    height: 70%;
+    width: 100%;
+}
+.goalsblock4img{
+    height: 100%;
+    width: 100%;
+}
+.goalsblock5{
+    height: 10%;
+    width: 96%;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: inline-flex;
+    justify-content: space-between;
+    font-size: 10%;
+}
+.goalsblock5speed{
+    color: black;
+}
+.goalsblock6{
+    height: 15%;
+    padding-top: 5%;
+    width: 100%;
+    font-size: 20%;
+    color: black;
+}
+
+.upcomingbillsblock1{
+    height: 15%;
+    width: 100%;
+    display: inline-flex;
+    color: #878787;
+    justify-content: space-between;
+}
+.upcomingbillsblock1_1{
+    height: 100%;
+    align-items: center;
+    display: inline-flex;
+    font-size: 20%;
+}
+.upcomingbillsblock1_1img{
+    height: 20%;
+    width: fit-content;
+}
+.upcomingbillsblock3{
+    height: 85%;
+    width: 100%;
+    background-color: white;
+    border-radius: 4%;
+}
+.upcomingblock3_1{
+    height: 35%;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 8%;
+    display: flex;
+    flex-direction: row;
+}
+.upcomingblock3_2{
+    height: 35%;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3% ;
+
+}
+.upcomingblock3_1_1{
+    height: 100%;
+    width: 15%;
+    border-radius: 8%;
+    background-color: #d2d2d2f0;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+}
+.upcomingblock3_1_2{
+    height: 100%;
+    width: 75%;
+}
+.upcomingblock3_1_3{
+    height: 100%;
+    width: 10%;
+    align-items: center;
+    display: flex;
+}
+.upcomingblock3_1_1_1{
+    height: 10%;
+    width: 100%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    font-size: 10%;
+    color: #666666;
+}
+.upcomingblock3_1_1_2{
+    height: 40%;
+    width: 100%;
+    font-size: 100%;
+}
+.upcomingblock3_1_2_1{
+    height: 50%;
+    width: 100%;
+    margin-top: 10;
+}
+.upcomingblock3_1_2_2{
+    height: 50%;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 50%;
+}
+.upcomingblock3_1_2_3{
+    height: 50%;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 30%;
+    color: #9F9F9F;
+}
+.upcomingblock3_1_3_1{
+    height: 23%;
+    padding-top: 5%;
+    width: 100%;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 12%;
+    font-size: 50%;
+}
+
+.upcomingblock3_2_1{
+    height: 100%;
+    width: 15%;
+    border-radius: 8%;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    background-color: #d2d2d2f0;
+}
+.upcomingblock3_2_2{
+    height: 100%;
+    width: 75%;
+}
+.upcomingblock3_2_3{
+    height: 100%;
+    width: 10%;
+    align-items: center;
+    display: flex;
+}
+.upcomingblock3_2_1_1{
+    height: 10%;
+    width: 100%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    font-size: 10%;
+    color: #666666;
+}
+.upcomingblock3_2_1_2{
+    height: 40%;
+    width: 100%;
+    font-size: 100%;
+}
+.upcomingblock3_2_2_1{
+    height: 50%;
+    width: 100%;
+    margin-top: 10;
+}
+.upcomingblock3_2_2_2{
+    height: 50%;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 50%;
+}
+.upcomingblock3_2_2_3{
+    height: 50%;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: white;
+    font-size: 30%;
+    color: #9F9F9F;
+}
+.upcomingblock3_2_3_1{
+    height: 22%;
+    padding-top: 5%;
+    border-radius: 12%;
+    text-align: center;
+    width: 100%;
+    border: 1px solid gray;
+    font-size: 50%;
+}
+.transactions{
+    height: 51vh;
+    padding-top: 2vh;
+    padding-bottom: 1vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+}
+.transactionsblock1{
+    height: 100%;
+    width: 25%;
+}
+.transactionsblock1_1{
+    height: 7%;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.transactionsblock1_1_1{
+    height: 100%;
+    width: 60%;
+    font-size: 50%;
+    font-weight: 350;
+    color: #878787;
+}
+.transactionsblock1_1_2{
+    height: 100%;
+    width:40 ;
+    font-size: 10%;
+    color: #878787;
+    text-align: center;
+}
+.transactionsblock1_1_2img{
+    height: 20%;
+    padding-left: 10%;
+    width: 10%;
+}
+.transactionsblock1_2{
+    height: 89%;
+    width: 90%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;  
+    background-color: white;
+    border-radius: 4%;
+}
+.transactionsblock1_2_1{
+    height: 10%;
+    width: 80%;
+    padding-bottom: 2%;
+    display: inline-flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+}
+.transactionsblock1_2_1_1{
+    height: 90%;
+    width:15%;
+    font-size: 50%;
+    display: inline-flex;
+    border:1.5px solid green;
+    color: green;
+    justify-content: center;
+    align-items: center;
+}
+.transactionsblock1_2_1_2{
+    font-size: 50%;
+}
+.transactionsblock1_2_2{
+    height:89% ;
+    width: 100%;
+}
+.transactionsblock1_2_2_1{
+    height: 10%;
+    width: 100%;
+    padding-top: 4%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid lightgray ;
+}
+.transactionsblock1_2_2_1img{
+    height: 100%;
+    width: 10%;
+}
+.transactionsblock1_2_2container{
+    height: 100%;
+    width: 85%;
+    padding-left: 5%;
+}
+.transactionsblock1_2_2_2{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 45%;
+    font-weight: 349;
+}
+.transactionsblock1_2_2_3{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: #9F9F9F;
+    justify-content: space-between;
+    font-size: 10%;
+    font-weight: 100;
+}
+.statistics_expenses{
+    height: 100%;
+    width: 74%;
+    padding-left: 1%;
+}
+.statistics{
+    height: 60%;
+    width: 100%;
+}
+.statistics_1{
+    height: 12%;
+    width: 100%;
+    font-size: 60%;
+    color: #878787;
+}
+.statistics_2{
+    height: 88%;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: white;
+    border-radius: 2%;
+}
+.statistics_2_1{
+    height: 8%;
+    width: 100%;
+    padding-bottom: 2%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.statistics_2_1_1{
+    height: 100%;
+    width: 20%;
+    display: inline-flex;
+    justify-content: space-between;
+    font-size: 30%;
+}
+.statistics_2_1_1img{
+    height: 100%;
+    width: 10%;
+}
+.statistics_2_1_2{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.statistics_2_1_2_1{
+    height: 100%;
+    width: 40%;
+    font-size: 10%;
+    display: flex;
+    align-items: center;
+}
+.statistics_2_1_2_2{
+    height: 100%;
+    width: 40%;
+    font-size: 10%;
+    display: flex;
+    align-items: center;
+}
+.statistics_2_1_2_1div{
+    height: 50%;
+    width: 15%;
+    background-color: #FF698D;
+    border-radius: 14%;
+    margin-right: 10%;
+}
+.statistics_2_1_2_2div{
+    height: 50%;
+    width: 15%;
+    background-color: #E8E8E8;
+    border-radius: 14%;
+    margin-right: 10%;
+}
+.statistics_3{
+    height: 72%;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.statistics_3_1{
+    height: 100%;
+    width: 8%;
+    padding-right: 2%;
+    color: #9F9F9F;
+    display: flex;
+    flex-direction:column ;
+    justify-content:space-between;
+    align-items: flex-end;
+    font-size: 10%;
+}
+.statistics_3_2{
+    height: 100%;
+    width: 90%;
+}
+.statistics_3_2img{
+    height: 100%;
+    width: 100%;
+}
+.statistics_4{
+    height: 15%;
+    width: 81%;
+    padding-left: 14%;
+    padding-right: 5%;
+    padding-top:1%;
+    font-size: 10%;
+    color: #9F9F9F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.expenses{
+    height: 40%;
+    width: 100%;
+}
+.expenses_1{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.expenses_1_1{
+    height: 100%;
+    width: 30%;
+    color: #878787;
+    font-size: 60%;
+}
+.expenses_1_2{
+    height: 100%;
+    width: 30%;
+    color: #878787;
+    font-size: 10%;
+    display: flex;
+    align-items: flex-end;
+}
+.expenses_2{
+    height: 80%;
+    width: 94%;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: white;
+    border-radius: 3%;
+}
+.expenses_personal{
+    height: 40%;
+    width: 100%;
+    padding-bottom: 2%;
+    padding-top: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.personal{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+}
+.personal_1{
+    height: 80%;
+    width: 20%;
+    background-color: #d2d2d2;
+    border-radius: 15%;
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.personal_1img{
+    height: 40%;
+    width: 40%;
+}
+.personal_2{
+    height: 100%;
+    width: 30%;
+    padding-left: 4%;
+}
+.personal_2_1{
+    height: 30%;
+    width: 100%;
+    font-size: 10%;
+    color: #9F9F9F;
+    display: flex;
+    text-align: start;
+}
+.personal_2_1img{
+    height: 90%;
+    padding-left: 10%;
+    width: fit-content;
+
+}
+.personal_2_2{
+    height: 40%;
+    width: 100%;
+    font-size: 50%;
+}
+.personal_3{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.personal_3img{
+    height: 40%;
+    width:30% ;
+}
+.expenses_business{
+    height: 35%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
